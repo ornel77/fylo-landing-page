@@ -197,7 +197,7 @@ nav .navbar li a:hover {
 /* -------------------------------------------------------------------------- */
 .team {
     /* margin-top: 100px; */
-    height: 173vh;
+    height: 1200px;
     padding-top: 90px;
     background-image: url("./images/bg-curve-desktop.svg");
     background-repeat: no-repeat;
@@ -320,7 +320,6 @@ footer .footer-logo {
 
 footer .footer-logo img {
     width: 60%;
-    background-color: #fff;
 }
 
 footer .contact {
