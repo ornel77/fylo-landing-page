@@ -1,12 +1,12 @@
 /* -------------------------------- VARIABLES ------------------------------- */
 
 :root {
-    --dark-blue:hsl(243, 87%, 12%);
-    --desat-blue:hsl(238, 22%, 44%);
-    --bright-blue:hsl(224, 93%, 58%);
+    --dark-blue: hsl(243, 87%, 12%);
+    --desat-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
     --moderate-cyan: hsl(170, 45%, 43%);
-    --light-gray-blue:hsl(240, 75%, 98%);
-    --light-gray:hsl(0, 0%, 75%);
+    --light-gray-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
 }
 
 /* ---------------------------------- RESET --------------------------------- */
@@ -21,14 +21,20 @@
 /*                                BASIC STYLING                               */
 /* -------------------------------------------------------------------------- */
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--dark-blue);
     overflow: auto;
-    scroll-behavior: smooth;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.7rem;
 }
@@ -91,7 +97,7 @@ input {
     color: var(--dark-blue);
 }
 
-.light{
+.light {
     color: var(--light-gray);
 }
 
@@ -116,7 +122,7 @@ input {
     opacity: 0.7;
 }
 
-.illustrations img{
+.illustrations img {
     width: 100%;
 }
 
@@ -159,6 +165,7 @@ nav .navbar li:last-child {
 nav .navbar li a {
     font-size: 0.9rem;
 }
+
 nav .navbar li a:hover {
     color: var(--bright-blue);
 }
@@ -168,8 +175,8 @@ nav .navbar li a:hover {
 /* -------------------------------------------------------------------------- */
 .features {
     padding-top: 80px;
-    
-    height: 100vh;
+
+    height: 900px;
     /* margin-top: 80px; */
     text-align: center;
     margin-bottom: 200px;
@@ -199,14 +206,14 @@ nav .navbar li a:hover {
     /* margin-top: 100px; */
     height: 1200px;
     padding-top: 90px;
-    background-image: url("./images/bg-curve-desktop.svg");
+    background-image: url("./images/bg-curve-mobile.svg");
     background-repeat: no-repeat;
     background-size: 460% 100%;
     background-position: center center;
 }
 
 .team h2 {
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 20px;
     text-align: center;
 
@@ -253,7 +260,7 @@ nav .navbar li a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -303,7 +310,7 @@ nav .navbar li a:hover {
 /*                                   FOOTER                                   */
 /* -------------------------------------------------------------------------- */
 footer {
-    background-color:var(--dark-blue);
+    background-color: var(--dark-blue);
     padding: 65px 0;
 }
 
@@ -326,11 +333,11 @@ footer .contact {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    
+
 }
 
 footer .contact a {
-    color:var(--light-gray);
+    color: var(--light-gray);
     font-size: 1rem;
 }
 
@@ -350,6 +357,7 @@ footer .contact ul li {
 .socials {
     margin: auto;
 }
+
 .socials a {
     display: inline-block;
     border: 1px solid white;
@@ -371,4 +379,135 @@ footer .contact ul li {
     padding: 5px;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+/* small tablet styles */
+@media screen and (min-width: 620px) {
 
+    .container,
+    .footer-container {
+        max-width: 510px;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 25px;
+    }
+
+    nav .navbar li {
+        margin-right: 13px;
+    }
+
+    .team .link img {
+        left: 74%;
+        top: -2px;
+    }
+
+    .team .link::after {
+        width: 52%;
+        left: 101px;
+    }
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 15px 90px 15px 90px;
+    }
+
+    .container {
+        max-width: 900px;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+
+    }
+
+    .illustrations {
+        order: 2;
+        margin-left: 50px;
+    }
+
+    .features {
+        margin-bottom: 100px;
+        height: 60vh;
+    }
+
+    .features form {
+        display: flex;
+    }
+
+    .features .btn {
+        height: 35px;
+        width: 45%;
+        margin-left: 10px;
+    }
+
+    .team {
+        height: 800px;
+        padding-top: 50px;
+        background-image: url("./images/bg-curve-desktop.svg");
+    }
+
+    .team h2,
+    .team .lead,
+    .team .link {
+        text-align: initial;
+    }
+
+    .team .link::after {
+        left: 0;
+        width: 60%;
+    }
+
+    .team .link img {
+        left: 53%;
+        top: 0px;
+    }
+
+    .sign-in {
+        padding-top: 40px;
+    }
+
+    .sign-in .sign-in-desc {
+        width: 50%;
+    }
+
+    .sign-in .btn {
+        width: 50%;
+    }
+
+    .footer-container {
+        max-width: 900px;
+    }
+    footer .footer-logo img {
+        width: 20%;
+    }
+
+    footer .contact {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .socials {
+        margin: initial;
+    }
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container, .footer-container {
+        max-width: 1100px;
+    }
+
+}
