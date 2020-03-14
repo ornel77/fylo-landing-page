@@ -11,7 +11,6 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
 <body>
-  <div class="container">
     <!-- NAVIGATION -->
     <nav>
       <div class="logo">
@@ -26,51 +25,55 @@
 
     <!-- FEATURES SECTION -->
     <section id="features" class="features">
-      <div class="illustrations">
-        <img src="./images/illustration-1.svg" alt="illustration-1">
-      </div>
-      <div class="features-content">
-        <h1 class="dark">All your files in one secure location, accessible anywhere.</h1>
-        <p>
-          Fylo stores your most important files in one secure location. 
-          Access them wherever you need, share and collaborate with friends, 
-          family, and co-workers.
-        </p>
-        <form action="index.html" class="form-features">
-          <input type="email" placeholder="Enter your email" required id="mail-access">
-          <label for="mail-access"></label>
-          <button class="btn" type="submit"> Get Started</button>
-        </form>
-        
+      <div class="container">
+        <div class="illustrations">
+          <img src="./images/illustration-1.svg" alt="illustration-1">
+        </div>
+        <div class="features-content">
+          <h1 class="dark">All your files in one secure location, accessible anywhere.</h1>
+          <p>
+            Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.
+          </p>
+          <form action="index.html" class="form-features">
+            <input type="email" placeholder="Enter your email" required id="mail-access">
+            <label for="mail-access"></label>
+            <button class="btn" type="submit"> Get Started</button>
+          </form>
+          
+        </div>
       </div>
     </section>
 
     <!-- TEAM SECTION -->
     <section id="team" class="team">
-      <div class="illustrations">
-        <img src="./images/illustration-2.svg" alt="illustration-2">
-      </div>
-      <h2 class="dark">Stay productive, wherever you are</h2>
-      <p>
-        Never let location be an issue when accessing your files. Fylo has you 
-        covered for all of your file storage needs.
-      </p>
-      <p>
-        Securely share files and folders with friends, family and colleagues for 
-        live collaboration. No email attachments required!
-      </p>
-      <a href="#" class="link">See how Fylo works <img src="./images/icon-arrow.svg" alt="icon-arrow"></a>
-      <div class="card">
-        <img src="./images/icon-quotes.svg" alt="icon-quotes">
+      <div class="container">
+        <div class="illustrations">
+          <img src="./images/illustration-2.svg" alt="illustration-2">
+        </div>
+        <h2 class="dark">Stay productive, wherever you are</h2>
         <p>
-          Fylo has improved our team productivity by an order of magnitude. Since 
-          making the switch our team has become a well-oiled collaboration machine.
+          Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.
         </p>
-        <div class="testimonial">
-          <img src="./images/avatar-testimonial.jpg" alt="avatar-testimonial">
-          <div class="legend">
-            <h3>Kyle Burton</h3>
-            <span>Founder & CEO, Huddle</span>
+        <p>
+          Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!
+        </p>
+        <a href="#" class="link">See how Fylo works <img src="./images/icon-arrow.svg" alt="icon-arrow"></a>
+        <div class="card">
+          <img src="./images/icon-quotes.svg" alt="icon-quotes">
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="testimonial">
+            <img src="./images/avatar-testimonial.jpg" alt="avatar-testimonial">
+            <div class="legend">
+              <h3>Kyle Burton</h3>
+              <span>Founder & CEO, Huddle</span>
+            </div>
           </div>
         </div>
       </div>
@@ -78,18 +81,20 @@
 
     <!-- SIGN IN SECTION -->
     <section id="sign-in" class="sign-in">
-      <div class="sign-in-desc">
-        <h2 class="light">Get early access today</h2>
-        <p>
-          It only takes a minute to sign up and our free starter tier is extremely generous. 
-          If you have any questions, our support team would be happy to help you.
-        </p>
+      <div class="container">
+        <div class="sign-in-desc">
+          <h2 class="light">Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is extremely generous. 
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
+        <form action="index.html" class="form-sign-in">
+          <input type="email" id="email" placeholder="email@exemple.com">
+          <label for="email"></label>
+          <button type="submit" class="btn">Get Started For Free</button>
+        </form>
       </div>
-      <form action="index.html" class="form-sign-in">
-        <input type="email" id="email" placeholder="email@exemple.com">
-        <label for="email"></label>
-        <button type="submit" class="btn">Get Started For Free</button>
-      </form>
     </section>
 
     <!-- FOOTER -->
@@ -127,7 +132,7 @@
         </div>
       </div>
     </footer>
-  </div>
+  
 
   <script src="https://kit.fontawesome.com/4096779503.js" crossorigin="anonymous"></script>
 </body>
